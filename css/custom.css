@@ -107,11 +107,6 @@
 }
 
 .stps-content {
-  display: grid;
-  justify-items: center;
-  grid-template-columns: 1fr 1fr;
-  row-gap: 6.4rem;
-  column-gap: 4.8rem;
 }
 
 .stps-content img {
@@ -145,15 +140,13 @@
 .step-img::before,
 .step-img::after {
   content: "";
-  display: block; 
- 
+  display: block;
 
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 50%;
-
 }
 
 .step-img::before {
@@ -161,17 +154,130 @@
   padding-bottom: 60%;
   background-color: #fdf2e9;
   z-index: -2;
-
 }
 .step-img::after {
   width: 50%;
   padding-bottom: 50%;
   background-color: #fae5d3;
   z-index: -1;
-
 }
 
-
-
-
 /* ------ Steps End ------ */
+
+/* ------ Feature-In Start ------ */
+.feature-in-header {
+  text-align: center;
+}
+
+.feature-in-header .step-header-description {
+  display: block;
+  color: #999;
+  margin-bottom: 3.2rem;
+  /* 24 / 32 / 48  */
+}
+
+.feature-in-images {
+  display: flex;
+  justify-content: space-around;
+}
+
+.fi-image {
+  height: 3.2rem;
+  /* filter: grayscale(10); */
+  filter: brightness(1%);
+  opacity: 50%;
+}
+
+/* ------ Feature-In End ------ */
+
+/* ------ Testimonials & Galery Start ------ */
+
+/* -- Testimonials ----- */
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  row-gap: 4.8rem;
+  column-gap: 3.2rem;
+}
+.testimonials-galery {
+  background-color: #fdf2e9;
+}
+
+.testimonials-header {
+  padding-bottom: 3.2rem;
+}
+
+.testimonials-body figure {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+.author-img img {
+  max-width: 20%;
+  border-radius: 50%;
+}
+.author-testimonial {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  letter-spacing: 1.2;
+}
+
+.author-info {
+  font-size: 1.4rem;
+  color: #999;
+}
+
+/* -- Galery ----- */
+
+.galery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 3.2rem;
+  column-gap: 2.4rem;
+}
+.container-img {
+  overflow: hidden;
+}
+.galery img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: all 0.3s;
+}
+
+.container-img img:hover {
+  transform: scale(1.05);
+}
+
+/* ------ Testimonials & Galery End ------ */
+
+/* ------ Meals Start ------ */
+.meals-header {
+  text-align: center;
+}
+
+.meals-footer {
+  text-align: center;
+}
+.meals-recipes {
+  display: inline-block;
+  font-size: 1.6rem;
+  color: #cf711f;
+  letter-spacing: 1.05px;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  font-weight: 500;
+  padding: 0.4rem;
+}
+
+.meals-recipes:hover {
+  /* border: none; */
+  border-bottom: 1px solid transparent;
+}
+
+.meals-header span {
+  display: block;
+  margin-bottom: 2.4rem;
+}
+/* ------ Meals End ------ */
