@@ -369,3 +369,100 @@ ion-icon {
   text-align: center;
 }
 /* ------ Meals End ------ */
+
+/* ------ Pricing & Fetures Start ------ */
+
+/* ------ Pricing Start ---- */
+
+.pricing-card {
+  border: 2px solid #fdf2e9;
+  border-radius: 8px;
+  padding: 3.2rem 2.4rem;
+  position: relative;
+}
+
+.pricing-card:last-child {
+  background-color: #fdf2e9;
+  overflow: hidden;
+}
+
+.pricing-card:last-child::after {
+  content: "Best Value";
+  text-align: center;
+  display: inline-block;
+  width: 150px;
+  position: absolute;
+  top: 2rem;
+  right: -5rem;
+  padding: 0.8rem 1.2rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  background-color: #fcc419;
+  transform: rotate(45deg);
+}
+
+.pricing-body {
+  display: flex;
+  justify-content: center;
+  gap: 3.2rem;
+}
+
+.pricing-card-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  font-size: 1.2rem;
+  margin-bottom: 3.2rem;
+  letter-spacing: 0.9px;
+}
+.pricing-card-body {
+  font-size: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+
+  margin-bottom: 3.2rem;
+}
+
+.pricing-card-body ion-icon {
+  font-size: 2.4rem;
+}
+
+.pricing-card .step-header-description {
+  font-weight: 500;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  margin-bottom: 0.8rem;
+}
+
+.pricing-card .price {
+  font-size: 3.6rem;
+  font-weight: 600;
+}
+
+.price span {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.pricing-card-body p {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  letter-spacing: 0.9px;
+}
+.pricing-card-footer {
+  display: flex;
+  justify-content: center;
+}
+.pricing-footer {
+  display: flex;
+  justify-content: center;
+}
+/* ------ Pricing End ---- */
+
+/* ------ Fetures Start ---- */
+/* ------ Fetures End ---- */
+
+/* ------ Pricing & Fetures End ------ */
