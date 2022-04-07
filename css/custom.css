@@ -374,10 +374,18 @@ ion-icon {
 
 /* ------ Pricing Start ---- */
 
+.pricing-header {
+  margin-bottom: 6.4rem;
+}
+.pricing-header .step-header-description {
+  display: inline-block;
+  margin-bottom: 2.4rem;
+}
+
 .pricing-card {
   border: 2px solid #fdf2e9;
   border-radius: 8px;
-  padding: 3.2rem 2.4rem;
+  padding: 6.4rem 4.8rem;
   position: relative;
 }
 
@@ -395,7 +403,7 @@ ion-icon {
   top: 2rem;
   right: -5rem;
   padding: 0.8rem 1.2rem;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: 500;
   background-color: #fcc419;
   transform: rotate(45deg);
@@ -412,12 +420,12 @@ ion-icon {
   flex-direction: column;
   align-items: center;
   gap: 0.8rem;
-  font-size: 1.2rem;
-  margin-bottom: 3.2rem;
-  letter-spacing: 0.9px;
+  font-size: 1.8rem;
+  margin-bottom: 4.8rem;
+  /* letter-spacing: 0.9px; */
 }
 .pricing-card-body {
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
@@ -432,25 +440,26 @@ ion-icon {
 .pricing-card .step-header-description {
   font-weight: 500;
   font-size: 1.4rem;
-  letter-spacing: 1px;
+  /* letter-spacing: 1px; */
   margin-bottom: 0.8rem;
 }
 
 .pricing-card .price {
-  font-size: 3.6rem;
+  font-size: 5.2rem;
   font-weight: 600;
 }
 
 .price span {
   font-size: 1.8rem;
-  font-weight: 500;
+  font-weight: 600;
+  padding: 0.6rem;
 }
 
 .pricing-card-body p {
   display: flex;
   align-items: center;
   gap: 1.2rem;
-  letter-spacing: 0.9px;
+  /* letter-spacing: 0.9px; */
 }
 .pricing-card-footer {
   display: flex;
@@ -459,10 +468,120 @@ ion-icon {
 .pricing-footer {
   display: flex;
   justify-content: center;
+
+  font-size: 1.8rem;
+
+  /* margin-top: 4.8rem;
+  margin-bottom: 6.4rem; */
+
+  margin: 4.8rem 0rem 6.4rem 0rem;
 }
 /* ------ Pricing End ---- */
 
 /* ------ Fetures Start ---- */
+
+.features {
+  display: flex;
+  gap: 3.2rem;
+
+  padding: 4.8rem;
+}
+
+.features ion-icon {
+  font-size: 3.6rem;
+  background-color: #fdf2e9;
+  /* color: white; */
+  padding: 1.6rem;
+  border-radius: 50%;
+  margin-bottom: 4.8rem;
+}
+
+.features h3 {
+  font-size: 2.4rem;
+  margin-bottom: 2.4rem;
+}
+
+.features p {
+  font-size: 1.8rem;
+  line-height: 1.5;
+}
+
 /* ------ Fetures End ---- */
 
 /* ------ Pricing & Fetures End ------ */
+
+/* ------ CTA Start ---- */
+
+.cta {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  color: #45260a;
+  border-radius: 12px;
+  overflow: hidden;
+
+  font-size: 1.8rem;
+  /* background-color: #51cf66; */
+  background-image: linear-gradient(to bottom right, #e67e22, #eb984e);
+  margin-bottom: 9.6rem;
+}
+
+.cta-form {
+  padding: 4.8rem;
+}
+
+.form {
+  margin-top: 4.8rem;
+}
+
+.form form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 2.4rem;
+  column-gap: 3.6rem;
+}
+
+.form label {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 1.6rem;
+}
+
+.form-control input,
+.form-control select {
+  border: none;
+  background-color: #fdf2e9;
+  width: 100%;
+  padding: 1.2rem;
+  border-radius: 8px;
+}
+
+.form-control:last-child {
+  align-self: end;
+}
+
+form .btn.btn-custom {
+  padding: 1rem 3.2rem;
+  width: 100%;
+  background-color: #45260a;
+  color: white;
+  transition: all 0.3s;
+}
+
+.btn-custom:hover {
+  background-color: red;
+}
+
+.cta-img {
+  background-image: url(../img/eating.jpg);
+  opacity: 0.6;
+  background-size: cover;
+}
+/* ------ CTA End ---- */
+
+/* ------ Footer Start ---- */
+
+.footer {
+  border-top: 1px solid rgba(51, 51, 51, 0.1);
+}
+/* ------ Footer End ---- */
