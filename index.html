@@ -27,17 +27,18 @@
     <title>OmniFood</title>
   </head>
   <body>
-    <header class="header">
+    <header id="header" class="open-nav">
+      <div class="header">
       <div class="logo">
         <img src="./img/omnifood-logo.png" alt="Omnifood Logo" />
       </div>
       <div class="nav-bar">
         <ul class="nav">
-          <li><a class="menu" href="#">How it works</a></li>
-          <li><a class="menu" href="#">Meals</a></li>
-          <li><a class="menu" href="#">Testimonials</a></li>
-          <li><a class="menu" href="#">Pricing</a></li>
-          <li><a class="btn btn-sm btn-primary" href="#">Try fo free</a></li>
+          <li><a class="menu" href="#steps">How it works</a></li>
+          <li><a class="menu" href="#meals">Meals</a></li>
+          <li><a class="menu" href="#testimonials">Testimonials</a></li>
+          <li><a class="menu" href="#prc-ftrs">Pricing</a></li>
+          <li><a class="btn btn-sm btn-primary" href="#cta">Try for free</a></li>
         </ul>
       </div>
 
@@ -45,6 +46,8 @@
         <ion-icon class="mobile-nav-icon" name="menu-outline"></ion-icon>
         <ion-icon class="mobile-nav-icon" name="close-outline"></ion-icon>
       </button>
+    </div>
+
     </header>
 
     <main>
@@ -62,7 +65,7 @@
             <a class="btn btn-lg btn-primary mr-sm" href="#"
               >Start eating well</a
             >
-            <a class="btn btn-lg btn-secundary" href="#">Learn more &darr;</a>
+            <a class="btn btn-lg btn-secundary" href="#steps">Learn more &darr;</a>
 
             <div class="customers mt-lg">
               <div class="customer-img">
@@ -116,7 +119,7 @@
         </div>
       </section>
 
-      <section class="steps pb-lg">
+      <section id="steps" class="steps pb-lg">
         <div class="steps-header">
           <span class="step-header-description">How it works</span>
           <h2 class="secundary-header">
@@ -178,7 +181,7 @@
         </div>
       </section>
 
-      <section class="meals container pt-lg pb-lg">
+      <section id="meals" class="meals container pt-lg pb-lg">
         <div class="meals-header">
           <span class="step-header-description">Melas</span>
           <h2 class="secundary-header">
@@ -277,7 +280,7 @@
         </div>
       </section>
 
-      <section class="testimonials-galery">
+      <section id="testimonials" class="testimonials-galery">
         <div class="container grid grid-2 pb-lg pt-lg">
           <div class="testimonials">
             <div class="testimonials-header">
@@ -383,7 +386,7 @@
         </div>
       </section>
 
-      <section class="pricing-features pt-lg pb-lg container">
+      <section id="prc-ftrs" class="pricing-features pt-lg pb-lg container">
         <div class="pricing">
           <div class="pricing-header">
             <span class="step-header-description">Pricing</span>
@@ -484,7 +487,7 @@
 
       </section>
 
-      <section class="cta container ">
+      <section id="cta" class="cta container ">
         <div class="cta-form">
           <h2 class="secundary-header">Get your first meal for free!</h2>
           <p>Healthy, tasty and hassle-free meals are waiting for you. Start eating well today. You can cancel or pause anytime. And the first meal is on us!</p>
@@ -520,6 +523,12 @@
 
     </main>
     <footer class="footer">
+      <div class="move-up">
+        <a href="#header">  
+          <ion-icon name="arrow-up-outline"></ion-icon>
+        </a>
+      
+      </div>
       <div class="container grid grid--footer">
         <div class="logo-col">
           <a href="#" class="footer-logo">

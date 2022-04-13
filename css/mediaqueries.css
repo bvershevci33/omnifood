@@ -1,4 +1,4 @@
-@media (min-width: 87em) {
+@media (min-width: 75em) {
   .hero-section {
     display: flex;
     justify-content: center;
@@ -8,6 +8,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  .mobile-nav {
+    display: none;
   }
 }
 
@@ -19,9 +23,12 @@
   .meals {
     padding-top: 0px !important;
   }
+  .mobile-nav {
+    display: none;
+  }
 }
 
-/* Landscape Tablet */
+/* Landscape Tablet 944px */
 @media (max-width: 59em) {
   .container {
     width: 90%;
@@ -47,6 +54,75 @@
   .galery {
     row-gap: 1.8rem;
     column-gap: 1.8rem;
+  }
+
+  header {
+    position: relative;
+  }
+
+  .mobile-nav {
+    display: block;
+  }
+
+  .nav-bar {
+    position: fixed;
+    top: 0%;
+    left: 100%;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.93);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: all 0.3s ease-in-out;
+
+    /* 1. Opacity: 0  */
+    opacity: 0;
+    /*  2. Set Mouse and keyboard events to none */
+    pointer-events: none;
+
+    /* 3. Hide element from screen reader */
+    visibility: hidden;
+
+    /* display: none; */
+
+    z-index: 10;
+  }
+
+  .open-nav .nav-bar {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    left: 0%;
+  }
+
+  .open-nav button {
+    position: fixed;
+    right: 0;
+    z-index: 99999;
+  }
+
+  .open-nav ion-icon[name="close-outline"] {
+    display: block;
+  }
+
+  .open-nav ion-icon[name="menu-outline"] {
+    display: none;
+    z-index: 99999;
+  }
+
+  .nav-bar .nav {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 3.2rem;
+    gap: 2.4rem;
+  }
+
+  .nav-bar .btn {
+    font-size: inherit;
   }
 }
 /* Portrait Tablet */
