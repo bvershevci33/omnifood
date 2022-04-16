@@ -105,6 +105,10 @@
 .delivered-meal {
   color: #cf711f;
 }
+
+.btn-rotate {
+  transform: rotate(360deg);
+}
 /* ------ HERO End ------ */
 
 /* ------ Steps Start ------ */
